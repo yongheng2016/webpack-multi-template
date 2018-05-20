@@ -8,9 +8,13 @@ const $h = require('../mock/$h')
   <meta name="keywords" content="<%= $.head.keywords %>">
   <meta name="description" content="<%= $.head.description %>">
   <title><%= $.head.title %></title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <%- $h.getScripts($.scripts) %>
   <%- $h.getStyles('commons') %>
   <%- $h.getScripts('commons') %>
   <%- $h.getStyles($.styles) %>
   <%- $h.getScripts($.scripts) %>
+  <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>

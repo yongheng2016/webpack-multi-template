@@ -1,4 +1,8 @@
-<% const view = 'my-view' %>
-<%- include ./commons/snippets/head.ejs %>
-<%- require('./commons/components/my-component.ejs')({title: 'this is my component'}) %>
-<%- include ./commons/snippets/foot.ejs %>
+<di>
+    <% const view = 'my-view' %>
+    <%- include ./commons/snippets/head.ejs %>
+    <%- require('./commons/components/my-component.ejs')({title: '这是ejs模板'}) %>
+    <%- include ./commons/components/carousel.ejs %>
+    <%- include ./commons/snippets/foot.ejs %>
+</div>
+
